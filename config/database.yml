@@ -1,0 +1,14 @@
+:development: &defaults
+  :adapter: mysql
+  :database: pool_tracker_dev
+  :username: pool_tracker
+  :password: pool_tracker
+  :host: localhost
+
+:test:
+  <<: *defaults
+  :database: sample_test
+
+:production:
+  <<: *defaults
+  :database: sample_production
